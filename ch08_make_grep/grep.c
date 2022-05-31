@@ -23,7 +23,10 @@ int regexec(const regex_t *reg, const char *string,
     size_t nmatch, regmatch_t pmatch[], int flags); : regex_t(패턴) + 문자열로 패턴찾음, 성공시 0 아니면 다른 값 반환
 size_t regerror(int errcode, const regex_t *reg, 
     char *msgbuf, size_t msgbuf_size); : regcomp서 에러발생시 에러 코드 반환, 이 에러코드를 메시지로 변환
+
 */
+
+
 
 static void do_grep(regex_t *pat, FILE *src);
 
